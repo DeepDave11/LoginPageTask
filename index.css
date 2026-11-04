@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1c2b33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #66c4ff 0%, #1aa7ff 45%, #00a2ff 100%);
+}
+
+.illustration {
+  width: 65%;
+  max-width: 340px;
+  height: auto;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f9ff 0%, #ffffff 100%);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 340px;
+}
+
+.form-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #17262d;
+}
+
+.form-description {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  height: 52px;
+  padding: 0 18px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #1c2b33;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 90, 170, 0.08);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input::placeholder {
+  color: #b5bcc2;
+}
+
+.input-group input:focus {
+  border-color: #1aa7ff;
+  box-shadow: 0 4px 14px rgba(26, 167, 255, 0.25);
+}
+
+.forgot-link {
+  align-self: flex-end;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1c2b33;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  height: 56px;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(180deg, #1aa7ff 0%, #0094f5 100%);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(0, 148, 245, 0.35);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(0, 148, 245, 0.45);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+.register-text {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.register-text a {
+  color: #0a6cff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .left-section {
+    display: none;
+  }
+}
